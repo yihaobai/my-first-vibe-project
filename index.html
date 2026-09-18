@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人主页</title>
-
+  <title>泡饼丝的个人主页</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -16,50 +13,65 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 24px;
       font-family: Arial, sans-serif;
-      color: white;
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #ffffff;
+      background: linear-gradient(135deg, #050505, #071b3d, #0b4f8a);
     }
 
     .card {
-      width: 90%;
-      max-width: 600px;
-      padding: 40px;
+      width: 100%;
+      max-width: 680px;
+      padding: 48px 36px;
       text-align: center;
-      border-radius: 24px;
-      background: rgba(255, 255, 255, 0.15);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(120, 190, 255, 0.35);
+      border-radius: 28px;
+      background: rgba(5, 15, 35, 0.78);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      color: #8ed0ff;
+      border: 1px solid rgba(142, 208, 255, 0.45);
+      border-radius: 999px;
+      font-size: 14px;
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      margin: 20px 0 12px;
+      font-size: 48px;
     }
 
     p {
+      color: #d9eaff;
       font-size: 18px;
       line-height: 1.8;
     }
 
     .button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      color: #5b4bb7;
-      background: white;
+      margin-top: 22px;
+      padding: 13px 26px;
+      color: #04152d;
+      background: #8ed0ff;
       border-radius: 999px;
       text-decoration: none;
       font-weight: bold;
     }
+
+    .button:hover {
+      background: #ffffff;
+    }
   </style>
 </head>
-
 <body>
   <main class="card">
-    <h1>你好，我是小明</h1>
-    <p>这是我的第一个 AI 编程网页。</p>
-    <p>我正在学习如何使用 GitHub 和 Vibe Coding。</p>
-    <a class="button" href="mailto:example@email.com">联系我</a>
+    <span class="tag">我的第一个 AI 编程项目</span>
+    <h1>你好，我是泡饼丝</h1>
+    <p>我正在学习 AI 编程，希望做出自己的工具。</p>
+    <a class="button" href="#about">认识我</a>
   </main>
 </body>
 </html>
